@@ -5,6 +5,7 @@
 Code accompanying the paper:
 > *Dynamic Context Scheduling: Learning Beyond the Static Universe*
 > Martin Mráz, André Biedenkapp — University of Freiburg
+> [arXiv preprint](https://arxiv.org/abs/TODO)
 
 ---
 
@@ -81,17 +82,13 @@ Small checkpoints for the notebook demos are in `models/`:
 - `cartpole_ppo_no_ctx_150k.zip` — CartPole, 150k steps, no context in obs
 - `walker_ppo_com_x_3M.zip` — BipedalWalker, 3M steps, cosine-annealing COM_X schedule
 
-## Experiments
-
-Training scripts and configs to reproduce the paper's results are in `experiments/`.
-
 ## Citation
 
 ```bibtex
-@inproceedings{mraz2025dynamic,
+@article{mraz2025dynamic,
   title={Dynamic Context Scheduling: Learning Beyond the Static Universe},
   author={Mráz, Martin and Biedenkapp, André},
-  booktitle={EWRL 2025},
+  journal={arXiv preprint},
   year={2025}
 }
 ```
