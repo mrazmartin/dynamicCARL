@@ -17,27 +17,38 @@ This exposes agents to a much richer distribution of transitions within a single
 
 ## Installation
 
+We recommend [uv](https://github.com/astral-sh/uv) for a fast, isolated install. pip works too.
+
+**With uv (recommended):**
+
 ```bash
-# Clone this repo
 git clone https://github.com/mrazmartin/dynamicCARL.git
 cd dynamicCARL
 
-# Install the package
+uv venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+uv pip install -e .
+uv pip install git+https://github.com/automl/CARL.git
+uv pip install swig box2d-py
+uv pip install stable-baselines3
+uv pip install pygame
+uv pip install mujoco
+uv pip install dm-control --no-deps
+uv pip install dm-env pyopengl
+```
+
+**With pip:**
+
+```bash
+git clone https://github.com/mrazmartin/dynamicCARL.git
+cd dynamicCARL
+
 pip install -e .
-
-# CARL (not on PyPI)
 pip install git+https://github.com/automl/CARL.git
-
-# Box2D environments
 pip install swig box2d-py
-
-# Pretrained model demos
 pip install stable-baselines3
-
-# Interactive CarRacing window
 pip install pygame
-
-# MuJoCo environments (Go2 / Quadruped) — use --no-deps to avoid labmaze/Bazel
 pip install mujoco
 pip install dm-control --no-deps
 pip install dm-env pyopengl
