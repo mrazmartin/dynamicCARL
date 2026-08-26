@@ -5,7 +5,7 @@
 Code accompanying the paper:
 > *Dynamic Context Scheduling: Learning Beyond the Static Universe*
 > Martin Mráz, André Biedenkapp — University of Freiburg
-> [arXiv preprint](https://arxiv.org/abs/TODO)
+> [arXiv:2608.20799](https://arxiv.org/abs/2608.20799)
 
 ---
 
@@ -85,10 +85,10 @@ Small checkpoints for the notebook demos are in `models/`:
 ## Citation
 
 ```bibtex
-@article{mraz2025dynamic,
+@article{mraz2026dynamic,
   title={Dynamic Context Scheduling: Learning Beyond the Static Universe},
-  author={Mráz, Martin and Biedenkapp, André},
-  journal={arXiv preprint},
-  year={2025}
+  author={Mr{\'a}z, Martin and Biedenkapp, Andr{\'e}},
+  journal={arXiv preprint arXiv:2608.20799},
+  year={2026}
 }
 ```
