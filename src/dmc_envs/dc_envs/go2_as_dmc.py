@@ -6,16 +6,12 @@ from typing import Callable, Optional
 import numpy as np
 from dm_control import viewer
 
-# Ensure project root on path (adjust levels if needed)
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.join(current_dir, '../../../..')
-sys.path.append(project_root)
 
 from carl.context.context_space import UniformFloatContextFeature, CategoricalContextFeature
 
-# make sure dm_control can find your domain module
-from dynamic_crl.src.dmc_envs.dc_envs.dmc_tasks import dmc_go2  # noqa: E402
-from dynamic_crl.src.dmc_envs.dc_envs.dynamic_carl_dmcontrol import CARLDmcEnv_our
+from dmc_envs.dc_envs.dmc_tasks import dmc_go2  # noqa: E402
+from dmc_envs.dc_envs.dynamic_carl_dmcontrol import CARLDmcEnv_our
 
 speed_presets = {
     "stop": 0.0,

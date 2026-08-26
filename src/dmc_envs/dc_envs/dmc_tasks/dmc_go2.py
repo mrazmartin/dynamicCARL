@@ -13,8 +13,7 @@ from dm_control import viewer
 
 import os, sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(current_dir, '../../../../..'))
-from dynamic_crl.src.dmc_envs.context_utils import adapt_context_from_physics
+from dmc_envs.context_utils import adapt_context_from_physics
 
 # just so we can load all the tasks from this module...
 from dm_control.utils import containers

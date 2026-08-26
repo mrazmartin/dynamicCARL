@@ -8,10 +8,9 @@ from carl.utils.types import Contexts
 
 import os, sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(current_dir, '../../../../..'))
 
-from dynamic_crl.src.dmc_envs.loader import load_dmc_env
-from dynamic_crl.src.dmc_envs.mj_gym_wrapper import MujocoToGymWrapper
+from dmc_envs.loader import load_dmc_env
+from dmc_envs.mj_gym_wrapper import MujocoToGymWrapper
 
 # the environment that you load needs to be capable of handling dynamic contexts
 class CARLDmcEnv_our(CARLEnv):

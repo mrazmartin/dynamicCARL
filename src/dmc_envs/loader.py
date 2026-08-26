@@ -8,14 +8,10 @@ import dm_env
 from dm_control import suite as dmc_suite
 import mujoco
 
-# Ensure project root on path (adjust levels if needed)
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.join(current_dir, '../../..')
-sys.path.append(project_root)
 
-# Import custom domains that expose SUITE and/or top-level factories
-from dynamic_crl.src.dmc_envs.dc_envs.dmc_tasks import dmc_go2  # registers SUITE on import
-from dynamic_crl.src.dmc_envs.dc_envs.dmc_tasks import quadruped
+from dmc_envs.dc_envs.dmc_tasks import dmc_go2  # registers SUITE on import
+from dmc_envs.dc_envs.dmc_tasks import quadruped
 
 try:
     from carl.utils.types import Context  # type: ignore

@@ -1,6 +1,6 @@
 from pathlib import Path
 from typing import Any, Dict, Sequence, Callable, List, Optional, Tuple
-import dynamic_crl.src.dynamic_carl.gym_context_updates as upd
+import dynamic_carl.gym_context_updates as upd
 
 def build_update_fn_from_spec(
     spec: Dict[str, Any],

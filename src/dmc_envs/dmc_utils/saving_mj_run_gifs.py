@@ -4,11 +4,8 @@ import cv2
 import dm_env
 import os, sys
 
-# Ensure project root on path (adjust levels if needed)
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.join(current_dir, '../../../../..')
-sys.path.append(project_root)
-from dynamic_crl.src.dmc_envs.dc_envs.go2_as_dmc import _ViewerHookEnv
+from dmc_envs.dc_envs.go2_as_dmc import _ViewerHookEnv
 
 
 def annotate_with_time(frame: np.ndarray, sim_time: float) -> np.ndarray:
