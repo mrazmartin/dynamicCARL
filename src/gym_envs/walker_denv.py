@@ -6,10 +6,9 @@ from gymnasium.envs.box2d import bipedal_walker as bpw
 
 import os, sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(current_dir, '../../..'))
 project_root = os.path.abspath(os.path.join(current_dir, '../../'))
 
-from dynamic_crl.src.utils.log_msgs import warn_msg, info_msg
+from utils.log_msgs import warn_msg, info_msg
 
 from carl.context.context_space import (
     ContextFeature,

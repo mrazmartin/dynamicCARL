@@ -1,15 +1,14 @@
 import os, sys
 import time
 current_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(current_dir, '../../..'))
 project_root = os.path.abspath(os.path.join(current_dir, '../../'))
 
-from dynamic_crl.src.gym_envs.cartpole_denv import CARLCartPole as cartpole
-from dynamic_crl.src.gym_envs.walker_denv import CARLBipedalWalker # has the payload context
-from dynamic_crl.src.gym_envs.vehicle_racing_denv import CARLVehicleRacing # has the payload context
-from dynamic_crl.src.dynamic_carl.env_wrappers import GymDynamicContextCarlWrapper
+from gym_envs.cartpole_denv import CARLCartPole as cartpole
+from gym_envs.walker_denv import CARLBipedalWalker # has the payload context
+from gym_envs.vehicle_racing_denv import CARLVehicleRacing # has the payload context
+from dynamic_carl.env_wrappers import GymDynamicContextCarlWrapper
 
-from dynamic_crl.src.utils.log_msgs import warn_msg, info_msg
+from utils.log_msgs import warn_msg, info_msg
 import gymnasium as gym
 from Box2D.b2 import fixtureDef, polygonShape, weldJointDef
 import math
