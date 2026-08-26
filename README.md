@@ -35,7 +35,7 @@ uv pip install stable-baselines3
 uv pip install pygame
 uv pip install mujoco
 uv pip install dm-control --no-deps
-uv pip install dm-env pyopengl
+uv pip install dm-env pyopengl lxml
 ```
 
 **With pip:**
@@ -51,7 +51,7 @@ pip install stable-baselines3
 pip install pygame
 pip install mujoco
 pip install dm-control --no-deps
-pip install dm-env pyopengl
+pip install dm-env pyopengl lxml
 ```
 
 ## Quick start
